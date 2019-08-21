@@ -16,17 +16,27 @@ const Form = props =>{
             ...teamMember
         };
         props.addNewMember(newMember);
-        setTeamMember({name: "", location: "", role: "", email: ""})
+        setTeamMember({name: "", location: "", role: "", email: "", age: ""})
     }
 
     return(
-        <form onSubmit={Submit}>
-            <label htmlFor="name">Name:</label>
-                <input
+        <div className="formDiv">
+        <form className="formStack" onSubmit={Submit}>
+            <label htmlFor="name" >Name:</label>
+                <input className="input"
                 type="text"
                 name="name"
                 placeholder="Name"
                 value={teamMember.name}
+                onChange={changeHandler}
+                />
+            <label htmlFor="age">Age:</label>
+
+                <input className="input"
+                type="text"
+                name="age"
+                placeholder="Age"
+                value={teamMember.age}
                 onChange={changeHandler}
                 />
                 <label htmlFor="email">Email:</label>
@@ -53,8 +63,10 @@ const Form = props =>{
                 value={teamMember.location}
                 onChange={changeHandler}
                 />
-                <button onClick={Submit}>Add New Member</button>
-        </form>
+                <button onClick={Submit}>JOIN</button>
+            
+
+        </form></div>
     )
 
 }

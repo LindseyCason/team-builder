@@ -14,8 +14,12 @@ const addNewMember = teamMember => {
 
   return (
     <div className="App">
-      <h1>MEET THE TEAM</h1>
+      <header>
+      <h1>JOIN THE TEAM?</h1>
       <Form addNewMember={addNewMember} />
+      </header>
+     
+      <h1>CURRENT MEMBERS</h1>
       <TeamMembers addNewMember={teamMembers} />
 
     </div>

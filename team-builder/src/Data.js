@@ -35,7 +35,7 @@ export default [{
     id: 5,
     name: "Christina Delligatta",
     age: 24,
-    location: "San Francisco",
+    location: "Ohio",
     email: "TinaDelli@gmail.com",
-    role: "Motivational Speaker/Software Engineer"
+    role: "Software Engineer"
 }];
